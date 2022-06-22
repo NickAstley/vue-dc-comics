@@ -8,9 +8,9 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                     <ul class="navbar-nav mb-2 mb-lg-0">
-                        <li class="nav-item" v-for="link in navLinks" :key="link">
+                        <li class="nav-item text-uppercase" v-for="link in navLinks" :key="link">
                             <a class="nav-link px-3" :class="link === `Comics` ? `active` : ``" aria-current="page" href="#">{{ link }}</a>
                         </li>
                     </ul>
@@ -42,30 +42,27 @@
 </script>
 
 <style lang="scss">
-    .navbar-collapse {
-        justify-content: end;
+    @import "../assets/scss/variables";
 
-        li.nav-item {
-            font-weight: 600;
-            text-transform: uppercase;
+    li.nav-item {
+        font-weight: 600;
 
-            a {
-                color: black;
+        a {
+            color: inherit;
 
-                &.active {
-                    color: #0C7CEC;
-                    position: relative;
+            &.active {
+                position: relative;
+                color: $bs-primary;
 
-                    &::after {
-                        content: "";
-                        width: 70%;
-                        height: 0.5rem;
-                        background: #0C7CEC;
-                        position: absolute;
-                        bottom: -2.75rem;
-                        left: 15%;
-                        right: 15%;
-                    }
+                &::after {
+                    content: "";
+                    width: 70%;
+                    height: 0.5rem;
+                    background: $bs-primary;
+                    position: absolute;
+                    bottom: -2.75rem;
+                    left: 15%;
+                    right: 15%;
                 }
             }
         }

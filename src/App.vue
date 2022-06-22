@@ -25,7 +25,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss">
-  @import url(../src/assets/scss/main.scss);
-</style>
