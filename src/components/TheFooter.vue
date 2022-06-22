@@ -2,12 +2,12 @@
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col">
+                <div class="col-4">
                     <div class="row py-5">
                         <div class="col">
                             <h5 class="mb-3">{{ footerCategories[0].title }}</h5>
                             <ul class="list-unstyled">
-                                <li v-for="(link, i) in footerCategories[1].links" :key="i">
+                                <li v-for="(link, i) in footerCategories[0].links" :key="i">
                                     <a href="#">
                                         {{ link }}
                                     </a>
@@ -15,7 +15,7 @@
                             </ul>
                             <h5 class="mb-3">{{ footerCategories[1].title }}</h5>
                             <ul class="list-unstyled">
-                                <li v-for="(link, i) in footerCategories[2].links" :key="i">
+                                <li v-for="(link, i) in footerCategories[1].links" :key="i">
                                     <a href="#">
                                         {{ link }}
                                     </a>
@@ -110,6 +110,9 @@
 <style lang="scss">
     footer {
         background-image: url("../assets/img/footer-bg.jpg");
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: cover;
 
         h5 {
             color: white;
@@ -120,7 +123,7 @@
             a {
                 color: #7C7979;
                 text-decoration: none;
-                font-size: 0.8rem;
+                font-size: 0.9rem;
             }
         }
 
@@ -128,7 +131,6 @@
             background-image: url("../assets/img/dc-logo-bg.png");
             background-position: center;
             background-repeat: no-repeat;
-            background-size: cover;
         }
     }
 </style>

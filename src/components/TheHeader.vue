@@ -11,7 +11,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mb-2 mb-lg-0">
                         <li class="nav-item" v-for="link in navLinks" :key="link">
-                            <a class="nav-link" :class="link === `Comics` ? `active` : ``" aria-current="page" href="#">{{ link }}</a>
+                            <a class="nav-link px-3" :class="link === `Comics` ? `active` : ``" aria-current="page" href="#">{{ link }}</a>
                         </li>
                     </ul>
                 </div>
@@ -43,7 +43,7 @@
 
 <style lang="scss">
     .navbar-collapse {
-        justify-content: center;
+        justify-content: end;
 
         li.nav-item {
             font-weight: 600;
