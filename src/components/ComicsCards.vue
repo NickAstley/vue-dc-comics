@@ -1,7 +1,6 @@
 <template>
     <div>
-        <div class="jumbotron" :style="clickedComicImg ? `background-image: url(${clickedComicImg})` : ``">
-        </div>
+        <TheJumbotron :clicked-img-src="clickedComicImg"/>
         <div class="bg-secondary">
             <div class="container">
                 <div class="current-series-title">
@@ -21,10 +20,12 @@
 </template>
 
 <script>
+    import TheJumbotron from "./TheJumbotron.vue"
     import ComicCard from "./ComicCard.vue"
 
     export default {
         components: {
+            TheJumbotron,
             ComicCard
         },
         data() {
@@ -111,13 +112,6 @@
 
 <style lang="scss">
     @import "../assets/scss/variables";
-
-    .jumbotron {
-        background-image: url("../assets/img/jumbotron.jpg");
-        background-position: top center;
-        background-size: cover;
-        height: 400px;
-    }
 
     .current-series-title {
         background: $primary;
