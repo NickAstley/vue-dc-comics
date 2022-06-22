@@ -9,7 +9,7 @@
                     <div class="row align-items-center">
                         <span class="col-auto text-primary fw-bold text-uppercase">Follow us</span>
                         <div class="col-auto text-center" v-for="social in socialMediaLinks" :key="social.site">
-                            <img :src="require(`../assets/img/${social.img_src}`)" alt="social.site">
+                            <img :src="require(`../assets/img/footer-${social.imgSrc}.png`)" alt="social.site">
                         </div>
                     </div>
                 </div>
@@ -25,23 +25,23 @@
                 socialMediaLinks: [
                     {
                         site: "Facebook",
-                        img_src: "footer-facebook.png"
+                        imgSrc: "facebook"
                     },
                     {
                         site: "Twitter",
-                        img_src: "footer-twitter.png"
+                        imgSrc: "twitter"
                     },
                     {
                         site: "YouTube",
-                        img_src: "footer-youtube.png"
+                        imgSrc: "youtube"
                     },
                     {
                         site: "Periscope",
-                        img_src: "footer-periscope.png"
+                        imgSrc: "periscope"
                     },
                     {
                         site: "Pinterest",
-                        img_src: "footer-pinterest.png"
+                        imgSrc: "pinterest"
                     }
                 ]
             }
