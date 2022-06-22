@@ -7,7 +7,7 @@
                 </div>
                 <div class="col">
                     <div class="row align-items-center">
-                        <span class="col-auto text-primary fw-bold text-uppercase">Follow us</span>
+                        <h4 class="col-auto text-primary fw-bold text-uppercase mb-0">Follow us</h4>
                         <div class="col-auto text-center" v-for="social in socialMediaLinks" :key="social.site">
                             <img :src="require(`../assets/img/footer-${social.imgSrc}.png`)" alt="social.site">
                         </div>

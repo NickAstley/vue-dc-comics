@@ -50,4 +50,8 @@
         max-width: 120px;
         max-height: 100px;
     }
+
+    span {
+        font-size: 1.1rem;
+    }
 </style>

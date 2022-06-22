@@ -1,11 +1,7 @@
 <template>
   <div id="app">
     <TheHeader/>
-    <main>
-      <div class="container">
-        <h1>--&gt; Content goes here &lt;--</h1>
-      </div>
-    </main>
+    <ComicsCards/>
     <BannerBlue/>
     <TheFooter/>
     <BannerSignUp/>
@@ -14,6 +10,7 @@
 
 <script>
 import TheHeader from "./components/TheHeader"
+import ComicsCards from "./components/ComicsCards"
 import BannerBlue from "./components/BannerBlue"
 import TheFooter from "./components/TheFooter"
 import BannerSignUp from "./components/BannerSignUp"
@@ -22,6 +19,7 @@ export default {
   name: 'App',
   components: {
     TheHeader,
+    ComicsCards,
     BannerBlue,
     TheFooter,
     BannerSignUp

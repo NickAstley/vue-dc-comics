@@ -52,13 +52,13 @@
 
             &.active {
                 position: relative;
-                color: $bs-primary;
+                color: $primary;
 
                 &::after {
                     content: "";
                     width: 70%;
                     height: 0.5rem;
-                    background: $bs-primary;
+                    background: $primary;
                     position: absolute;
                     bottom: -2.75rem;
                     left: 15%;
