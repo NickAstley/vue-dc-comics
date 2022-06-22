@@ -7,22 +7,25 @@
       </div>
     </main>
     <TheFooter/>
+    <BannerSignUp/>
   </div>
 </template>
 
 <script>
 import TheHeader from "./components/TheHeader"
 import TheFooter from "./components/TheFooter"
+import BannerSignUp from "./components/BannerSignUp"
 
 export default {
   name: 'App',
   components: {
     TheHeader,
-    TheFooter
+    TheFooter,
+    BannerSignUp
   }
 }
 </script>
 
-<style lang="scss" scoped>
-  @import url(../src/assets/scss/general.scss);
+<style lang="scss">
+  @import url(../src/assets/scss/main.scss);
 </style>
